@@ -19,7 +19,7 @@ pytest-nogarbage
     :alt: MIT License
 
 .. image:: https://travis-ci.org/mvollrath/pytest-nogarbage.svg?branch=master
-    :target: https://travis-ci.org/mvollrath/pytest-nogarbage
+    :target: https://app.travis-ci.com/github/mvollrath/pytest-nogarbage
     :alt: See Build Status on Travis CI
 
 The purpose of this plugin is ensuring that portions of your Python code do not produce garbage or manually invoke garbage collection.
