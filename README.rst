@@ -34,6 +34,9 @@ You should use this plugin when:
 * You intend to run a program with garbage collection disabled in production.
 * You wish to verify elimination of garbage collection overhead produced by frequently called functions.
 
+This tool is not for finding memory leaks; even if your code produces no garbage, native call-ins can still leak memory.  Garbage in CPython is specifically circular references between Python objects.
+
+If you are interested in optimizing CPython garbage collection or unsure of the difference between garbage and memory leaks, the `gc docs`_ and `CPython Garbage Collection devguide`_ are excellent resources.
 
 Requirements
 ------------
@@ -65,12 +68,6 @@ Add the `nogarbage` fixture to your test to ensure it does not produce garbage::
         import gc
         gc.collect()
         # ERROR: Garbage collected during test.
-
-
-Recommended Reading
--------------------
-
-If you are interested in optimizing CPython garbage collection, the `gc docs`_ and `CPython Garbage Collection devguide`_ are excellent resources.
 
 
 License
