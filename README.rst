@@ -8,7 +8,15 @@ pytest-nogarbage
 
 .. image:: https://img.shields.io/pypi/pyversions/pytest-nogarbage.svg
     :target: https://pypi.org/project/pytest-nogarbage
-    :alt: Python versions
+    :alt: Python 3.7+
+
+.. image:: https://img.shields.io/pypi/implementation/pytest-nogarbage.svg
+    :target: https://pypi.org/project/pytest-nogarbage
+    :alt: CPython
+
+.. image:: https://img.shields.io/pypi/l/pytest-nogarbage.svg
+    :target: https://pypi.org/project/pytest-nogarbage
+    :alt: MIT License
 
 .. image:: https://travis-ci.org/mvollrath/pytest-nogarbage.svg?branch=master
     :target: https://travis-ci.org/mvollrath/pytest-nogarbage
