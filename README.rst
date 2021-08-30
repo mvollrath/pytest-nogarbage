@@ -61,7 +61,7 @@ Add the `nogarbage` fixture to your test to ensure it does not produce garbage::
     def test_circular(nogarbage):
         l1 = []
         l2 = [l1]
-        l2.append(l1)
+        l1.append(l2)
         # ERROR: Garbage collected after test.
 
     def test_collect(nogarbage):
