@@ -18,10 +18,6 @@ pytest-nogarbage
     :target: https://pypi.org/project/pytest-nogarbage
     :alt: MIT License
 
-.. image:: https://travis-ci.org/mvollrath/pytest-nogarbage.svg?branch=master
-    :target: https://app.travis-ci.com/github/mvollrath/pytest-nogarbage
-    :alt: See Build Status on Travis CI
-
 The purpose of this plugin is ensuring that portions of your Python code do not produce garbage or manually invoke garbage collection.
 
 When the `nogarbage` pytest fixture is added to a test, it will cause an error under the following conditions:
@@ -70,6 +66,17 @@ Add the `nogarbage` fixture to your test to ensure it does not produce garbage::
         # ERROR: Garbage collected during test.
 
 
+Running the Tests
+-----------------
+
+This project uses `nox`_ to test against multiple Python versions::
+
+    $ python3 -m venv .venv
+    $ source .venv/bin/activate
+    (.venv) $ pip install nox uv
+    (.venv) $ nox
+
+
 License
 -------
 
@@ -77,7 +84,7 @@ Distributed under the terms of the `MIT`_ license, "pytest-nogarbage" is free an
 
 .. _`MIT`: http://opensource.org/licenses/MIT
 .. _`file an issue`: https://github.com/mvollrath/pytest-nogarbage/issues
-.. _`tox`: https://tox.readthedocs.io/en/latest/
+.. _`nox`: https://nox.thea.codes/en/stable/
 .. _`pip`: https://pypi.org/project/pip/
 .. _`PyPI`: https://pypi.org/project
 .. _`gc docs`: https://docs.python.org/3/library/gc.html
