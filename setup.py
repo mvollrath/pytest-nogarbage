@@ -13,7 +13,7 @@ def read(fname):
 
 setup(
     name='pytest-nogarbage',
-    version='1.0.0',
+    version='1.0.1',
     author='Matt Vollrath',
     author_email='tactii@gmail.com',
     maintainer='Matt Vollrath',
